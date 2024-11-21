@@ -11,12 +11,23 @@ def read_input(filename):
 
 def find_intersection(sets):
     if not sets:
-        return set()
+        return set()  # Возврат пустого множества, если пустой список множеств
 
-    intersection = sets[0]
+        # Используем первое множество как базу для проверки
+    intersection = set()
 
-    for s in sets[1:]:
-        intersection = intersection.intersection(s)
+    # Перебираем все элементы первого множества
+    for element in sets[0]:
+        # Проверяем, присутствует ли элемент во всех остальных множествах
+        found_in_all = True  # Флаг для отслеживания наличия элемента во всех множествах
+
+        for s in sets[1:]:
+            if element not in s:
+                found_in_all = False  # Если хотя бы в одном множестве нет элемента, выходим из цикла
+                break
+
+        if found_in_all:
+            intersection.add(element)  # Если элемент найден во всех множествах, добавляем в пересечение
 
     return intersection
 
