@@ -45,7 +45,7 @@ E:\Pyton projects\projects\DiscMathHW1\HW1\src> python interaction_app.py
 
 ## 2) Нами был реализован алгоритм, позволяющий найти пересечение заданных n множеств, рассмотрим, что выполняется в строках кода
 
-## [Написанная программа](https://github.com/Mihail-Bay/DiscMathHW1/blob/main/HW1/src/InteractionOfASet.py)
+## [Написанная программа](https://github.com/Mihail-Bay/DiscMathHW1/tree/main)
 
 
 
